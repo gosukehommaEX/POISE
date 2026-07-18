@@ -1,6 +1,6 @@
 Package: POISE
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Closed-Form One-Step Negative Binomial Rate Ratio Estimation
 Version: 0.1.0
 Authors@R: person(
     given  = "Gosuke",
@@ -8,10 +8,20 @@ Authors@R: person(
     role   = c("aut", "cre"),
     email  = "my.name.is.gosuke@gmail.com"
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: Fast, non-iterative estimation of the rate ratio between two
+    groups of negative binomial counts. A one-step estimator anchored at
+    the Poisson group rates reproduces the negative binomial maximum
+    likelihood fit and provides a matching closed-form standard error and
+    Wald inference. Additional tools reconstruct the maximum likelihood
+    analysis from published group summaries, size trials following the
+    method of Tang (2015), and compare operating characteristics of the
+    estimators by simulation.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+URL: https://github.com/gosukehommaEX/POISE
+BugReports: https://github.com/gosukehommaEX/POISE/issues
+Imports:
+    MASS,
+    stats
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
