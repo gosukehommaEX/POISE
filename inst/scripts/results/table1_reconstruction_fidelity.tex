@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[htbp]
+\centering
+\caption{Reconstruction fidelity under constant within-group follow-up (no dropout). The summary-based estimator reproduces the negative binomial maximum likelihood fit to numerical precision.}
+\label{tab:recon-fidelity}
+\begin{tabular}{lrrrrrr}
+\toprule
+Phase & $\nu$ & $n$/group & med $|\Delta \log RR|$ & max $|\Delta \log RR|$ & med $|\Delta SE|$ & med rel.\ err. \\
+\midrule
+Phase 2 & 0.5 & 165 & $3.0 \times 10^{-15}$ & $2.4 \times 10^{-14}$ & $5.5 \times 10^{-15}$ & $1.4 \times 10^{-14}$ \\
+Phase 2 & 1 & 120 & $2.2 \times 10^{-15}$ & $1.4 \times 10^{-14}$ & $4.7 \times 10^{-16}$ & $1.1 \times 10^{-14}$ \\
+Phase 2 & 2 & 97 & $1.9 \times 10^{-15}$ & $1.3 \times 10^{-14}$ & $1.3 \times 10^{-10}$ & $9.1 \times 10^{-15}$ \\
+Phase 3 & 0.5 & 570 & $4.8 \times 10^{-15}$ & $3.1 \times 10^{-14}$ & $1.7 \times 10^{-15}$ & $4.5 \times 10^{-14}$ \\
+Phase 3 & 1 & 398 & $3.4 \times 10^{-15}$ & $2.0 \times 10^{-14}$ & $5.3 \times 10^{-16}$ & $3.3 \times 10^{-14}$ \\
+Phase 3 & 2 & 311 & $2.7 \times 10^{-15}$ & $1.8 \times 10^{-14}$ & $1.1 \times 10^{-10}$ & $2.6 \times 10^{-14}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
